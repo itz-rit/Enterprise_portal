@@ -1,0 +1,17 @@
+{
+  "name": "field-staff-system",
+  "version": "1.0.0",
+  "description": "Complete Field Staff Management System - Backend, Frontend, and Mobile",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run mobile\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "mobile": "cd mobile && flutter pub get && flutter run",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seed": "cd backend && node seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

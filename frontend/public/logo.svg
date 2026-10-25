@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" fill="none">
+  <defs>
+    <linearGradient id="gold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f5d060"/>
+      <stop offset="40%"  stop-color="#d4a017"/>
+      <stop offset="70%"  stop-color="#f5d060"/>
+      <stop offset="100%" stop-color="#a07810"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffe97a"/>
+      <stop offset="50%"  stop-color="#c8960c"/>
+      <stop offset="100%" stop-color="#f5d060"/>
+    </linearGradient>
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── Crown ── -->
+  <g fill="url(#gold1)" filter="url(#glow)">
+    <!-- Base bar -->
+    <rect x="148" y="62" width="104" height="10" rx="5"/>
+    <!-- 5 spikes -->
+    <polygon points="200,18 215,62 185,62"/>
+    <polygon points="236,28 248,62 224,62"/>
+    <polygon points="164,28 176,62 152,62"/>
+    <polygon points="262,42 270,62 252,62"/>
+    <polygon points="138,42 148,62 130,62"/>
+    <!-- Crown balls -->
+    <circle cx="200" cy="15" r="6"/>
+    <circle cx="236" cy="25" r="5"/>
+    <circle cx="164" cy="25" r="5"/>
+    <circle cx="263" cy="40" r="4"/>
+    <circle cx="137" cy="40" r="4"/>
+  </g>
+
+  <!-- ── Shield outline ── -->
+  <path d="M90,75 L90,235 Q90,295 200,340 Q310,295 310,235 L310,75 Z"
+        fill="url(#gold1)" filter="url(#glow)"/>
+  <!-- Shield inner fill -->
+  <path d="M100,82 L100,232 Q100,287 200,328 Q300,287 300,232 L300,82 Z"
+        fill="url(#shieldBg)"/>
+  <!-- Inner gold line border -->
+  <path d="M108,88 L108,230 Q108,280 200,318 Q292,280 292,230 L292,88 Z"
+        fill="none" stroke="url(#gold2)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- ── "PE" Monogram ── -->
+  <g fill="url(#gold1)" filter="url(#glow)">
+    <!-- P - left half -->
+    <rect x="124" y="118" width="14" height="82" rx="4"/>
+    <path d="M138,118 Q178,118 178,150 Q178,182 138,182 L138,170 Q163,170 163,150 Q163,130 138,130 Z"/>
+
+    <!-- E - right half -->
+    <rect x="198" y="118" width="14" height="82" rx="4"/>
+    <rect x="212" y="118" width="54" height="14" rx="4"/>
+    <rect x="212" y="152" width="44" height="12" rx="4"/>
+    <rect x="212" y="186" width="54" height="14" rx="4"/>
+  </g>
+
+  <!-- Small appliance icons inside shield bottom -->
+  <g fill="url(#gold2)" opacity="0.75">
+    <!-- Washing machine (left) -->
+    <rect x="128" y="218" width="32" height="36" rx="4" fill="none" stroke="url(#gold2)" stroke-width="1.5"/>
+    <circle cx="144" cy="235" r="10" fill="none" stroke="url(#gold2)" stroke-width="1.5"/>
+    <circle cx="144" cy="235" r="5"/>
+
+    <!-- Fridge (right) -->
+    <rect x="240" y="218" width="32" height="36" rx="4" fill="none" stroke="url(#gold2)" stroke-width="1.5"/>
+    <line x1="240" y1="238" x2="272" y2="238" stroke="url(#gold2)" stroke-width="1.5"/>
+
+    <!-- AC (top right) -->
+    <rect x="246" y="118" width="36" height="18" rx="4" fill="none" stroke="url(#gold2)" stroke-width="1.2"/>
+    <line x1="250" y1="136" x2="253" y2="148" stroke="url(#gold2)" stroke-width="1.2"/>
+    <line x1="258" y1="136" x2="261" y2="148" stroke="url(#gold2)" stroke-width="1.2"/>
+    <line x1="266" y1="136" x2="269" y2="148" stroke="url(#gold2)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Star at shield bottom -->
+  <polygon points="200,298 204,310 216,310 207,318 210,330 200,322 190,330 193,318 184,310 196,310"
+           fill="url(#gold1)" opacity="0.8"/>
+
+  <!-- ── Laurel Wreaths ── -->
+  <g fill="url(#gold1)" opacity="0.9">
+    <!-- Left laurel -->
+    <ellipse cx="74"  cy="190" rx="9"  ry="5"  transform="rotate(-50 74 190)"/>
+    <ellipse cx="60"  cy="210" rx="9"  ry="5"  transform="rotate(-45 60 210)"/>
+    <ellipse cx="50"  cy="232" rx="9"  ry="5"  transform="rotate(-40 50 232)"/>
+    <ellipse cx="46"  cy="256" rx="9"  ry="5"  transform="rotate(-30 46 256)"/>
+    <ellipse cx="50"  cy="278" rx="9"  ry="5"  transform="rotate(-20 50 278)"/>
+    <ellipse cx="62"  cy="298" rx="9"  ry="5"  transform="rotate(-10 62 298)"/>
+    <ellipse cx="80"  cy="313" rx="9"  ry="5"  transform="rotate(0  80 313)"/>
+    <!-- Left stem -->
+    <path d="M90,175 Q40,230 80,320" stroke="url(#gold1)" stroke-width="2" fill="none"/>
+    <!-- Row 2 -->
+    <ellipse cx="82"  cy="175" rx="7"  ry="4"  transform="rotate(-55 82 175)"/>
+    <ellipse cx="66"  cy="197" rx="7"  ry="4"  transform="rotate(-50 66 197)"/>
+    <ellipse cx="55"  cy="220" rx="7"  ry="4"  transform="rotate(-42 55 220)"/>
+    <ellipse cx="49"  cy="243" rx="7"  ry="4"  transform="rotate(-30 49 243)"/>
+    <ellipse cx="52"  cy="267" rx="7"  ry="4"  transform="rotate(-18 52 267)"/>
+    <ellipse cx="63"  cy="287" rx="7"  ry="4"  transform="rotate(-5  63 287)"/>
+
+    <!-- Right laurel (mirrored) -->
+    <ellipse cx="326" cy="190" rx="9"  ry="5"  transform="rotate(50 326 190)"/>
+    <ellipse cx="340" cy="210" rx="9"  ry="5"  transform="rotate(45 340 210)"/>
+    <ellipse cx="350" cy="232" rx="9"  ry="5"  transform="rotate(40 350 232)"/>
+    <ellipse cx="354" cy="256" rx="9"  ry="5"  transform="rotate(30 354 256)"/>
+    <ellipse cx="350" cy="278" rx="9"  ry="5"  transform="rotate(20 350 278)"/>
+    <ellipse cx="338" cy="298" rx="9"  ry="5"  transform="rotate(10 338 298)"/>
+    <ellipse cx="320" cy="313" rx="9"  ry="5"  transform="rotate(0  320 313)"/>
+    <path d="M310,175 Q360,230 320,320" stroke="url(#gold1)" stroke-width="2" fill="none"/>
+    <ellipse cx="318" cy="175" rx="7"  ry="4"  transform="rotate(55 318 175)"/>
+    <ellipse cx="334" cy="197" rx="7"  ry="4"  transform="rotate(50 334 197)"/>
+    <ellipse cx="345" cy="220" rx="7"  ry="4"  transform="rotate(42 345 220)"/>
+    <ellipse cx="351" cy="243" rx="7"  ry="4"  transform="rotate(30 351 243)"/>
+    <ellipse cx="348" cy="267" rx="7"  ry="4"  transform="rotate(18 348 267)"/>
+    <ellipse cx="337" cy="287" rx="7"  ry="4"  transform="rotate(5  337 287)"/>
+  </g>
+
+  <!-- ── Banner ribbon ── -->
+  <g>
+    <path d="M70,338 Q200,322 330,338 Q340,352 330,360 Q200,345 70,360 Q60,352 70,338 Z"
+          fill="url(#gold1)"/>
+    <!-- Ribbon ends -->
+    <path d="M70,338 L48,332 L55,352 L70,360 Z" fill="url(#gold2)"/>
+    <path d="M330,338 L352,332 L345,352 L330,360 Z" fill="url(#gold2)"/>
+    <!-- Banner shine -->
+    <path d="M80,341 Q200,326 320,341" stroke="rgba(255,255,220,0.4)" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- ── Text: PRADEEP ── -->
+  <text x="200" y="398"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="36"
+        font-weight="bold"
+        fill="url(#gold1)"
+        text-anchor="middle"
+        letter-spacing="4"
+        filter="url(#glow)">PRADEEP</text>
+
+  <!-- ── Text: ENTERPRISES ── -->
+  <text x="200" y="426"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="url(#gold2)"
+        text-anchor="middle"
+        letter-spacing="8">ENTERPRISES</text>
+
+  <!-- Decorative lines beside ENTERPRISES -->
+  <line x1="42" y1="420" x2="108" y2="420" stroke="url(#gold2)" stroke-width="0.8" opacity="0.7"/>
+  <line x1="292" y1="420" x2="358" y2="420" stroke="url(#gold2)" stroke-width="0.8" opacity="0.7"/>
+</svg>

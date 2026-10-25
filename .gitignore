@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backend
+backend/coverage/
+backend/.backend.log
+backend/.backend.err.log
+
+# Frontend
+frontend/dist/
+frontend/build/
+frontend/.eslintcache
+
+# Mobile (Flutter)
+mobile/.dart_tool/
+mobile/.idea/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/build/
+mobile/android/local.properties
+mobile/android/.gradle
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/ios/.generated/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
